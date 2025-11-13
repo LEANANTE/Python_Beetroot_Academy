@@ -1,0 +1,11 @@
+# Встановлення pytest
+pip install pytest pytest-cov
+
+# Запуск всіх тестів
+pytest test_file_context_manager.py -v
+
+# Запуск з покриттям коду
+pytest test_file_context_manager.py --cov=file_context_manager --cov-report=html
+
+# Запуск конкретного тесту
+pytest test_file_context_manager.py::TestFileContextManager::test_successful_file_reading -v
